@@ -14,9 +14,6 @@
         <h2>Do you a costruction project we can help with?</h2>
         <button class="btn-dark-absolute mx-2 position-absolute">Get a free quote</button>
     </section>
-    <section>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eius deleniti minus veritatis doloremque nemo maxime voluptas distinctio consequatur, laboriosam beatae earum odio ut in optio officiis id numquam nam!
-    </section>
 </template>
 
 <script>
@@ -25,7 +22,7 @@ import NavBarComponent from "./partial/NavBarComponent.vue";
     export default {
     data() {
         return {
-            store
+            store,
         };
     },
     components: { NavBarComponent }
