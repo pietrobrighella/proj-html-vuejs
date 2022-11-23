@@ -108,5 +108,27 @@ export const store = reactive({
             name: 'Harry Smith',
             role: 'New home owner'
         }
+    ],
+    partners: [
+        {
+            image: 'home-logo1-219096700-320x202.png',
+            url: '#'
+        },
+        {
+            image: 'home-logo2-219096700-320x202.png',
+            url: '#'
+        },
+        {
+            image: 'home-logo9-219096700-320x202.png',
+            url: '#'
+        },
+        {
+            image: 'home-logo10-219096700-320x202.png',
+            url: '#'
+        },
+        {
+            image: 'home-logo11-219096700-320x202.png',
+            url: '#'
+        }
     ]
 });

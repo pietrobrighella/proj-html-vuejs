@@ -55,15 +55,21 @@
         <ReviewComponent />
     </section>
 
+    <!-- PARTNERS -->
+    <section>
+        <PartnersComponent />
+    </section>
+
 </template>
 
 <script>
 import { store } from "../store";
 import CardComponent from "./partial/CardComponent.vue";
+import PartnersComponent from "./partial/PartnersComponent.vue";
 import ReviewComponent from "./partial/ReviewComponent.vue";
 
     export default {
-        components: { CardComponent, ReviewComponent },
+        components: { CardComponent, ReviewComponent, PartnersComponent },
         data() {
             return {
                 store

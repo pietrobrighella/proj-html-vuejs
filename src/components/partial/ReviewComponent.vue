@@ -36,9 +36,9 @@ import { store } from "../../store"
         },
         methods: {
             prevSlide(){
-                this.activeSlide--
                 if(this.activeSlide > 0){
                     this.activeSlide = store.review.length - 1
+                    this.activeSlide--
                 }
             },
             nextSlide(){
@@ -47,10 +47,10 @@ import { store } from "../../store"
                     this.activeSlide = 0
                 }
             },
-            autoscroll(){
-                clearInterval(()=>{
+            autoScroll(){
+                this.autoscroll = setInterval(()=>{
                     this.nextSlide();
-                },2000)
+                },5000)
             },
             stopAutoscroll(){
                 clearInterval(this.autoscroll);
