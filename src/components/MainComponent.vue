@@ -38,16 +38,20 @@
         </div>
         <div class="row">
             <div class="col-4" v-for="(work, index) in store.works" :key="index">
-                <figure>
-                    <img :src="`/public/img/` + work.image" :alt="work.title" class="img-fluid">
+                <figure class="position-relative">
+                    <img :src="`/public/img/` + work.image" :alt="work.title" class="img-fluid img-work">
+                    <div class="position-absolute info-work">
+                        <h5>{{work.title}}</h5>
+                        <h6 class="text-uppercase">{{work.category}}</h6>
+                    </div>
                 </figure>
-                <h5>{{work.title}}</h5>
-                <h6 class="text-uppercase">{{work.category}}</h6>
             </div>
         </div>
-        <div class="divider dvd-1"></div>
-        <button class="btn-all-proj text-uppercase">View all project</button>
-        <div class="divider dvd-2"></div>
+        <div class="mt-4">
+            <div class="divider dvd-1"></div>
+            <button class="btn-all-proj text-uppercase">View all project</button>
+            <div class="divider dvd-2"></div>
+        </div>
     </section>
 
     <!-- REVIEW -->
@@ -72,7 +76,8 @@ import ReviewComponent from "./partial/ReviewComponent.vue";
         components: { CardComponent, ReviewComponent, PartnersComponent },
         data() {
             return {
-                store
+                store,
+                isHovering: false,
             }
         }
     }
@@ -158,4 +163,25 @@ import ReviewComponent from "./partial/ReviewComponent.vue";
         font-size: 1rem;
     }
 }
+.info-work {
+    background-color: $dark;
+    filter: opacity(.8);
+    color: $white;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s;
+    text-align: start;
+    padding-left: 20px;
+
+    &:hover {
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
 </style>
