@@ -6,7 +6,7 @@
                 <p class="lh-lg py-4">We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
                 <button>Learn More</button>
             </div>
-            <div class="col-4 mt-4">
+            <div class="col-4 mt-4 px-3">
                 <h4 class="text-uppercase">Contact us today</h4>
                 <ul>
                     <li class="list-unstyled position-relative"><font-awesome-icon icon="fa-solid fa-globe" class="icona position-absolute"/>Corporate Location<br>1600 Amphitheatre Parkway<br>London WC1 1BA</li>
@@ -18,6 +18,7 @@
                 </ul>
             </div>
             <div class="col-3 mt-4">
+                <h4 class="text-uppercase">Our location</h4>
                 <img src="../../public/img/construction_map_pin.png" alt="Maps" class="img-fluid">
             </div>
         </div>

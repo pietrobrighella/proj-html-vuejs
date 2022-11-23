@@ -14,7 +14,7 @@
             <div class="row building-space align-items-center h-100">
                 <div class="col-8">
                     <h2>Building inspiring spaces</h2>
-                    <div class="divider"></div>
+                    <div class="divider div-left"></div>
                     <p class="fs-5 text">Vivamus Sed Consectetur Tellus Dolor Sit Amet, Consectetur Adipiscing Lorem Elit Sadip Ipsum Ets Ficilis Uns</p>
                 </div>
                 <div class="col-4 d-flex flex-column text-center">
@@ -41,15 +41,21 @@ import { store } from "../../store"
 <style lang="scss" scoped>
 @import "../../assets/main.scss";
 .divider { 
-    margin: 2rem 0;
+    margin: 2rem auto;
     width: 300px;
     height: 2px;
     background-color: $sun;
+    &.div-left {
+        margin: 2rem 0;
+    }
 }
 .partners-wrapper {
     height: 400px;
     background-image: url(../../../public/img/about-call-to-action-57862405.webp);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .building-space {
     color: $white;

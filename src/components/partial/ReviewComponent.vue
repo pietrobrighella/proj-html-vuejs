@@ -13,8 +13,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div class="prev mx-1" @click="prevSlide()"></div>
-                    <div class="next mx-1 activereview" @click="nextSlide()"></div>
+                    <div v-for="(m, i) in store.review" :key="i" class="bullet" :class="i === activeSlide ? 'activereview' : ''" @click="nextSlide()"></div>
                 </div>
             </div>
         </div>
@@ -59,7 +58,7 @@ import { store } from "../../store"
         },
         mounted() {
             this.autoscroll()
-        },
+        }
     }
 </script>
 
@@ -131,13 +130,14 @@ import { store } from "../../store"
         font-size: 1.2rem;
     }
 }
-.prev, .next {
+.bullet {
     width: 15px;
     height: 15px;
     border-radius: 20px;
     cursor: pointer;
     border: 2px solid $white;
     background-color: $white;
+    margin: 0 5px;
     &.activereview {
         background-color: transparent;   
     }
