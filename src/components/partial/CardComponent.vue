@@ -13,7 +13,7 @@
                 </div>
                 <div class="back">
                     <div class="h-100 d-flex flex-column justify-content-center">
-                        <h4>{{title_flip}}</h4>
+                        <h5 class="text-uppercase">{{title_flip}}</h5>
                         <p>{{text_flip}}</p>
                         <button>Get a quote</button>
                     </div>
@@ -79,6 +79,11 @@ import { store } from "../../store"
 
 h4 {
     font-size: 2rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.2rem;
     font-weight: 400;
 }
 

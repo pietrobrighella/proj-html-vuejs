@@ -37,7 +37,7 @@ import NavBarComponent from "./partial/NavBarComponent.vue";
 }
 .hero {
     height: 600px;
-    background-image: url(../assets/img/home-slider-62528242.jpg);
+    background-image: url(../../public/img/home-slider-62528242.jpg);
     background-size: cover;
     padding-top: 200px;
 }
@@ -82,7 +82,6 @@ button {
         color: $darkgrey;
     }
 }
-
 .btn-dark-absolute {
     bottom: -25px;
     background-color: $darkgrey;

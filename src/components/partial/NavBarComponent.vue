@@ -2,7 +2,7 @@
     <navbar>
         <div class="container d-flex py-4 justify-content-between align-items-center">
             <div class="h-100">
-                <img src="../../assets/img/construction_logo_retina.png" alt="Construction" class="h-100">
+                <img src="../../../public/img/construction_logo_retina.png" alt="Construction" class="h-100">
             </div>
             <div class="d-flex">
                 <ul class="d-flex align-items-center list-unstyled mb-0 px-3">
